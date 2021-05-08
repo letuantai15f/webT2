@@ -2,14 +2,17 @@
 padding: 0;}
 .logo_header{width:17%;
 height:25%;}
-.text_logo{position: absolute;
-	float: left;
-	left: 40%;
-	top: 50%;
-	display: block;
+.text_logo{
+	padding: 0.1em;
+	position: relative;
+	left: 27%;
+	top: 20%;
+	
+	
+	
 	
 }
-.txt_logo{font-size: 60px;
+.txt_logo{font-size: 50px;
 	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 	text-shadow: 5px 5px 5px #218EC3
 		
