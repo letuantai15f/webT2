@@ -1,5 +1,5 @@
 *{margin: 0;
-padding: 0;}
+padding: 0px;}
 
 body{text-align: center;}
 .logo_header{width:17%;
@@ -31,9 +31,13 @@ height:25%;}
 	text-align: center;
 }
 .list-sp{margin: 3em }
+
+
 #if h3,h6{text-align: center;}
 #panel-main{padding: 0px;width: 100%}
 #panel-img{width: 100%;height: auto;}
+#col-menu{padding: 0;}
+#main{padding: 0; }
 
 
 
@@ -90,8 +94,12 @@ text-align: center;}
 #content-body{
 padding: 0;}
 
-@media (max-width:1023px) {
+@media (max-width:768px) {
 	.menu li{font-size: 25px;}
+	.logo{width: 100px; height: 100px;}
+	.txt_logo{font-size: 30px;}
+	#inf h6,h5{font-size: 10px;}
+	
     
 }
 
