@@ -110,6 +110,9 @@ padding: 0;}
 	#btndangnhap{font-size: 10px;}
 	#btndangki{font-size: 10px;}
 	#btnmenu{font-size: 10px;}
+
+	#navbarText{display: block;}
+	.menu{position: absolute;top: 0px;left: 0;bottom: 0;width: 100px; height: 500px;}
 	
 	
     
