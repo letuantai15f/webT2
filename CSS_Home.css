@@ -109,9 +109,9 @@ padding: 0;}
 	#btndangki{font-size: 10px;}
 	#btnmenu{font-size: 10px;}
 	#navbarText li{
-	float: left;
-		left: 50px;
-	width: 150px;
+	float:left;
+		left: 40%;
+	
 	font-size: 13px;
 	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 	position: relative;
@@ -124,12 +124,10 @@ padding: 0;}
 	width: 100%;
 	height: auto;
 	background-color: #1D1414;
-	text-align: left;
-	
-	
-	
-	
+	text-align: left;	
 }
+	#navbarText li{text-align: center;}
+	
 	
 }
 
