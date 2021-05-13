@@ -124,10 +124,10 @@ padding: 0;}
 	width: 100%;
 	height: auto;
 	background-color: #1D1414;
-	text-align: left;	
+	text-align: center;	
 }
-	#navbarText li{text-align: center;}
-	
+	#menu-2{left: 95% !important;transform: translate3d(2px,2px,2px)!important;min-width: 0;}
+	#menu-2 li{left: 20%!important;}
 	
 }
 
