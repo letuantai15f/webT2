@@ -46,7 +46,7 @@ height:25%;}
 
 
 
-
+#dropdownMenu2{background-color:#1D1414; color: white;font-size: 15px;position: relative; padding: 0;margin: 0;}
 
 #navbarText li{
 	float: left;
@@ -110,12 +110,27 @@ padding: 0;}
 	#btndangnhap{font-size: 10px;}
 	#btndangki{font-size: 10px;}
 	#btnmenu{font-size: 10px;}
-
-
+	#navbarText li{
+	float: left;
+		left: 50px;
+	width: 150px;
+	font-size: 13px;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	position: relative;
+	margin: 10px;
 	
-	
-    
+		
 }
-
+	#navbarText{
+	
+	width: 100%;
+	height: auto;
+	background-color: #1D1414;
+		text-align: center;
+	
+	
+}
+	
+}
 
 
