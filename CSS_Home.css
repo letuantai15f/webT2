@@ -119,7 +119,7 @@ padding: 0;}
 	
 		
 }
-	#navbarText{
+	#navbarText{ position: absolute;
 	
 	width: 44%;
 	height: auto;
