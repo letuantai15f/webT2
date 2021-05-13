@@ -121,10 +121,12 @@ padding: 0;}
 }
 	#navbarText{
 	
-	width: 100%;
+	width: 44%;
 	height: auto;
 	background-color: #1D1414;
-		text-align: center;
+		text-align: left;
+	
+	
 	
 	
 }
