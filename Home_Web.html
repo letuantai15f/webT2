@@ -3,170 +3,196 @@
 <head>
 <meta charset="utf-8">
 <title>T-SHOP</title>
-	
-	<link rel="stylesheet" href="CSS_Home.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://getbootstrap.com/examples/navbar-fixed-top/navbar-fixed-top.css" rel="stylesheet">
-  
-	
+<link rel="stylesheet" href="CSS_Home.css">
+<link href="bootstrap.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script language="javascript">
+
+
+
+</script>
 </head>
 
 <body>
-	<nav class="navbar-expand-md navbar-light bg-light sticky-top ">
-		<div class="header">
-			<div class="container text-center" >
-				<div class="row">
-					<div class="col-lg-1 " >
-						<div class="logo_header">
-							<a href="" > <img src="IMG/lgoo.png" alt="logo" height="150" width="150" class="logo"  > </a>
-						</div>
-					</div>
-                    <div class="col-lg-2">
-                    	<div class="text_logo"> 
-							<h1 class="txt_logo"><i> T-SHOP </i></h1>
-						</div>
+<nav class="navbar-expand-md navbar-light bg-light sticky-top ">
+  <div class="header">
+    <div class="container text-center" >
+      <div class="row">
+        <div class="col-lg-1 " >
+          <div class="logo_header"> <a href="" > <img src="IMG/lgoo.png" alt="logo" height="150" width="150" class="logo"  > </a> </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="text_logo">
+            <h1 class="txt_logo"><i> T-SHOP </i></h1>
+          </div>
+        </div>
+        <div class="col-lg-4 " id="inf">
+          <h5>CHUYÊN CUNG CẤP SẢN PHẨM MÁY QUAY PHIM</h5>
+          <h6>Địa chỉ: 107/10, Nguyễn Thái Sơn, P4, Gò Vấp</h6>
+        </div>
+        <div class="col-lg-5 ">
+          <div class="container">
+            <input type="text" class="form" name="Tên đăng nhập" placeholder="Tên đăng nhập">
+            <input type="text" class="form" name="pass" placeholder="Nhập mật khẩu">
+            <hr>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modaldangnhap" 	 id="btndangnhap">Đăng nhập</button>
+            <button type="button" class="btn btn-primary" id="btndangki" data-toggle="modal" data-target="#modaldangki">Đăng Kí</button>
+			  
+<!--			  modal dang nhap-->
+			  
+            <div class="modal fade " id="modaldangnhap" role="dialog"  tabindex="-1" data-backdrop="false">
+              <div class="modal-dialog" >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="mylargetmobal">Đăng nhập</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-group" placeholder="Tên Tài Khoảng">
+                        <input type="text" class="form-group" placeholder="Mật Khẩu">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Đăng nhập</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!--modal dang ki	 -->
+			    <div class="modal fade " id="modaldangki" role="dialog"  tabindex="-1" data-backdrop="false">
+              <div class="modal-dialog" >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" >Đăng Kí</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-group" placeholder="Tên Tài Khoảng">
+                        <input type="text" class="form-group" placeholder="Mật Khẩu">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Đăng Kí</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+			  
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" id="col-menu" align="left">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="btnmenu" onClick="navbarText"> <span class="navbar-toggler-icon"></span> </button>
+          <div class="menu">
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul type="none" class="navbar-nav mr-auto">
+                <li ><a href="">Trang Chủ </a></li>
+                <li class="nav-item dropdown">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Sản Phẩm </button>
+                    <div class="dropdown-menu bg-primary" aria-labelledby="dropdownMenu2" id="menu-2">
+                      <ul type="none">
+                        <li ><a href="#">Canon</a></li>
+                        <li ><a href="#">Sony</a></li>
+                        <li ><a href="#">Fujifilm</a></li>
+                      </ul>
                     </div>
-					<div class="col-lg-4 " id="inf">
-						<h5>CHUYÊN CUNG CẤP SẢN PHẨM MÁY QUAY PHIM</h5>
-						<h6>Địa chỉ: 107/10, Nguyễn Thái Sơn, P4, Gò Vấp</h6>
-					</div>
-					<div class="col-lg-5 ">
-						<div class="login-user">
-		
-							<input type="text" class="form" name="Tên đăng nhập" placeholder="Tên đăng nhập">
-							<input type="text" class="form" name="pass" placeholder="Nhập mật khẩu">
-							<hr>
-							<button type="button" class="btn btn-primary" id="btndangnhap">Đăng nhập</button>
-							<button type="button" class="btn btn-primary" id="btndangki">Đăng Kí</button>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12" id="col-menu" align="left">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="btnmenu" onClick="navbarText">
-    					<span class="navbar-toggler-icon"></span>
-  						</button>
-						<div class="menu">
-							<div class="collapse navbar-collapse" id="navbarText">
-								<ul type="none" class="navbar-nav mr-auto">
-									<li ><a href="">Trang Chủ </a></li>
-									<li class="nav-item dropdown">
-										<div class="dropdown">
-											  <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												Sản Phẩm 
-											  </button>
-											  <div class="dropdown-menu bg-primary" aria-labelledby="dropdownMenu2" id="menu-2">
-												<ul type="none">
-												  	<li ><a href="#">Canon</a></li>
-													<li ><a href="#">Sony</a></li>
-													<li ><a href="#">Fujifilm</a></li>
-												  
-												  </ul>
-											  </div>
-											</div>
-									 </li>
-									
-									<li ><a href="">Phụ Kiện </a></li>
-									<li ><a href="">Hỗ Trợ</a></li>
-									<li ><a href="">Giới Thiệu </a></li>
-									<li><a href="">Site Map</a></li>
-
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
-		<nav class="navbar navbar-expand-lg navbar-light" id="content-body">
-  
-			<div class="container text-center" id="main">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-lg-12" id="panel-main">
-							<div class="panel">
-										<img src="IMG/canon1dx.jpg" alt="img-panel" id="panel-img">
-								</div>
-						</div>
-					</div>
-					<div class="list-sp">
-						<div class="row">
-							<div class=" col-md-2_sp" id="canon-705">				
-								<img src="IMG/Canon/XF705/canonXF705.png" alt="XF705" width="300" height="300" ><h2>Canon XF705</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-							<div class=" col-md-2_sp" id="canon-405">				
-								<img src="IMG/Canon/XF405/xf405_b1.png" alt="XF405" width="300" height="300"><h2>Canon XF405</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-							<div class=" col-md-2_sp" id="canon-C300">				
-								<img src="IMG/Canon/EOSC300MARK_II/eos-c300-markii-b1.png" alt="C300" width="300" height="300"><h2>Canon C300</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-							<div class=" col-md-2_sp" id="sony-a73">				
-								<img src="IMG/SONY/sony-alpha-a7-mark-iii4-500x500.jpg" alt="sony a73" width="300" height="300"><h2>Sony A7 Mark III</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-							<div class=" col-md-2_sp" id="sony-pxwz90">				
-								<img src="IMG/SONY/PXW-Z90V/sony-alpha-a7-mark-iii-500x500.jpg" alt="sony-pxwz90" width="300" height="300"><h2>Sony PXW Z90</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-							<div class=" col-md-2_sp" id="fuji-xt14">				
-								<img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300"><h2>Fujifilm XT-14</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-							<div class=" col-md-2_sp" id="fuji-xt4">				
-								<img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300"><h2>Fujifilm XT-14</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-							<div class=" col-md-2_sp" id="fuji-x14">				
-								<img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300"><h2>Fujifilm XT-14</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-							<div class=" col-md-2_sp" id="fuji-t14">				
-								<img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300"><h2>Fujifilm XT-14</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-							<div class=" col-md-2_sp" id="fuji-t">				
-								<img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300"><h2>Fujifilm XT-14</h2>
-								<input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
-							</div>
-						</div>
-					</div>
-						
-				</div>
-				
-
-			</div>
+                  </div>
+                </li>
+                <li ><a href="">Phụ Kiện </a></li>
+                <li ><a href="">Hỗ Trợ</a></li>
+                <li ><a href="">Giới Thiệu </a></li>
+                <li><a href="">Site Map</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
-	<nav class="navbar-expand-md navbar-light ">
-				<div class="container text-center" id="footer">
-			<div class="row"></div>
-				<div class="col-md-12">
-					<div class=" inf">
-							<hr>
-						<ul class="inf-ul" type="none">
-							<li>Bản quyền © 2021 CÔNG TY TNHH T-SHOP MARKETING VIỆT NAM</li>
-							<li>Địa chỉ: 107/10 Nguyễn Thái Sơn, P4 , Gò Vấp</li>
-							<li>Hotline: 0949218444</li>
-							<li>UY TÍN - CHẤT LƯỢNG</li>
-
-						</ul>
-					</div>
-				</div>
-			</div>
-	</nav>
-	<script src="bootstrap.bundle.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-	 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-	<script src="bootstrap.bundle.min.js"></script>
-	<script src="bootstrap.bundle.min.js.map"></script>
-	<script src="bootstrap.min.js.map"></script>
-	<script src="bootstrap.min.js"></script>
-	
+<nav class="navbar navbar-expand-lg navbar-light" id="content-body">
+  <div class="container text-center" id="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12" id="panel-main">
+          <div class="panel"> <img src="IMG/canon1dx.jpg" alt="img-panel" id="panel-img"> </div>
+        </div>
+      </div>
+      <div class="list-sp">
+        <div class="row">
+          <div class=" col-md-2_sp" id="canon-705"> <img src="IMG/Canon/XF705/canonXF705.png" alt="XF705" width="300" height="300" >
+            <h2>Canon XF705</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+          <div class=" col-md-2_sp" id="canon-405"> <img src="IMG/Canon/XF405/xf405_b1.png" alt="XF405" width="300" height="300">
+            <h2>Canon XF405</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+          <div class=" col-md-2_sp" id="canon-C300"> <img src="IMG/Canon/EOSC300MARK_II/eos-c300-markii-b1.png" alt="C300" width="300" height="300">
+            <h2>Canon C300</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+          <div class=" col-md-2_sp" id="sony-a73"> <img src="IMG/SONY/sony-alpha-a7-mark-iii4-500x500.jpg" alt="sony a73" width="300" height="300">
+            <h2>Sony A7 Mark III</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+          <div class=" col-md-2_sp" id="sony-pxwz90"> <img src="IMG/SONY/PXW-Z90V/sony-alpha-a7-mark-iii-500x500.jpg" alt="sony-pxwz90" width="300" height="300">
+            <h2>Sony PXW Z90</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+          <div class=" col-md-2_sp" id="fuji-xt14"> <img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300">
+            <h2>Fujifilm XT-14</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+          <div class=" col-md-2_sp" id="fuji-xt4"> <img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300">
+            <h2>Fujifilm XT-14</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+          <div class=" col-md-2_sp" id="fuji-x14"> <img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300">
+            <h2>Fujifilm XT-14</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+          <div class=" col-md-2_sp" id="fuji-t14"> <img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300">
+            <h2>Fujifilm XT-14</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+          <div class=" col-md-2_sp" id="fuji-t"> <img src="IMG/FUJIFilm/X-T14/may-anh-fujifilm-x-t4-kit-xf16-80mm.jpg" alt="sony-pxwz90" width="300" height="300">
+            <h2>Fujifilm XT-14</h2>
+            <input class="btn btn-secondary btn-md" type="button" value="Xem chi tiết">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="navbar-expand-md navbar-light ">
+  <div class="container text-center" id="footer">
+    <div class="row"></div>
+    <div class="col-md-12">
+      <div class=" inf">
+        <hr>
+        <ul class="inf-ul" type="none">
+          <li>Bản quyền © 2021 CÔNG TY TNHH T-SHOP MARKETING VIỆT NAM</li>
+          <li>Địa chỉ: 107/10 Nguyễn Thái Sơn, P4 , Gò Vấp</li>
+          <li>Hotline: 0949218444</li>
+          <li>UY TÍN - CHẤT LƯỢNG</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<script src="Boostrap.jquery.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> 
+<script src="bootstrap.min.js"></script>
 </body>
 </html>
