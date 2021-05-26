@@ -5,10 +5,14 @@
 body {
     text-align: center;
 }
+#text-modal{position: absolute; float: right; right: 250px;}
+#img-modal{position: absolute;width: 498px; height: 375px;; top: 70px;}
+
 .logo_header {
     width: 17%;
     height: 25%;
 }
+.form-group {font-size: 20px;}
 .text_logo {
     padding: 0.1em;
     position: relative;
@@ -168,4 +172,5 @@ body {
     #menu-2 li {
         left: 20% !important;
     }
+	#text-modal{font-size: 13px;}
 }
