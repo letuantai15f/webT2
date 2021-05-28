@@ -7,6 +7,8 @@ body {
 }
 #text-modal{position: absolute; float: right; right: 250px;}
 #img-modal{position: absolute;width: 498px; height: 375px;; top: 70px;}
+#myCarousel{border: none!important; position: relative;}
+.chitietmay{position: relative;float: right;}
 
 .logo_header {
     width: 17%;
