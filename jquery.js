@@ -9,18 +9,24 @@ btndangnhap.onclick = function checkdangnhap()
 	
 	var username=inputUsername.value;
 	var pass=inputPass.value;
-	
+	if(username=="" ||pass=="")
+		{
+			alert('vui long nhap day du')
+		}
 
 	var x=JSON.parse(localStorage.getItem('mydata')) || [];
+		if (x.length==0)
+			alert('vui long dang ki');
 	for(var i=0;i<x.length;i++){
 		var t=x[i].user;
+		
 		var y=x[i].passw;
 		if(username===x[i].user && pass===x[i].passw)
 			alert('thanh cong');
 		else
 			alert('that bai');
 		
-	}
+	}	
 
 }
 
