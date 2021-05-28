@@ -110,6 +110,7 @@ body {
 #content-body {
     padding: 0;
 }
+#display th{border: 2px solid;width: 250px;}
 @media (max-width:768px) {
     .menu li {
         font-size: 25px;
@@ -128,6 +129,7 @@ body {
         left: 25%;
         top: 15%;
     }
+	
     #inf h5 {
         font-size: 12px;
     }
