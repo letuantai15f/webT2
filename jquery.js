@@ -3,6 +3,7 @@
 var inputUsername=document.getElementById("username");
 var inputPass=document.getElementById("pass");
 var btndangnhap=document.getElementById("btndangnhap");
+
 btndangnhap.onclick = function checkdangnhap()
 
 {
