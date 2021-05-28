@@ -44,7 +44,12 @@ body {
     margin: 3em
 }
 .giatien{color: red;}
+.hidden{
+   margin-left: -300px;
+   opacity: 0;
+}
 
+#btndangxuat{display: none;}
 #if h3, h6 {
     text-align: center;
 }

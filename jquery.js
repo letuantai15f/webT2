@@ -23,8 +23,21 @@ btndangnhap.onclick = function checkdangnhap()
 		var t=x[i].user;
 		
 		var y=x[i].passw;
-		if(username===x[i].user && pass===x[i].passw)
+		if(username===x[i].user && pass===x[i].passw){
 			alert('thanh cong');
+		document.getElementById('btndangnhap').style.display='none';
+		document.getElementById('btndangki').style.display='none';
+		document.getElementById('btndangxuat').style.display='block';
+		var btndangxuat=document.getElementById('btndangxuat');
+			btndangxuat.onclick=function xoa(){
+				inputUsername.value="";
+				inputPass.value="";
+				alert('Đã Đăng Xuất');
+				btndangxuat.style.display='none';
+				
+				location.reload();
+			}
+		}
 		else
 			alert('that bai');
 		
