@@ -110,7 +110,7 @@ body {
 #content-body {
     padding: 0;
 }
-#display th{border: 2px solid;width: 200px;}
+#display th{border: 2px solid;width: 250px;}
 @media (max-width:768px) {
     .menu li {
         font-size: 25px;
