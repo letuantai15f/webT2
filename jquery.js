@@ -13,10 +13,12 @@ btndangnhap.onclick = function checkdangnhap()
 		{
 			alert('vui long nhap day du')
 		}
+	else{
 
 	var x=JSON.parse(localStorage.getItem('mydata')) || [];
 		if (x.length==0)
 			alert('vui long dang ki');
+		
 	for(var i=0;i<x.length;i++){
 		var t=x[i].user;
 		
@@ -27,6 +29,8 @@ btndangnhap.onclick = function checkdangnhap()
 			alert('that bai');
 		
 	}	
+	}
+		
 
 }
 
