@@ -184,7 +184,7 @@ btnmua.onclick = function checkmua() {
 			
 			if (username === x[i].user && pass === x[i].passw) {
 				var r= confirm("Bạn chắc chắn mua chứ!");
-				var r2=confirm('Thông tin bạn chọn mua:'+kh[i].sanpham+'Họ Tên   :' + x[i].hoten);
+				var r2=confirm('Thông tin bạn chọn mua:'+kh[i].sanpham+' \n Họ Tên Khách Hàng   :' + x[i].hoten);
 				if(r==true && r2==true)
 				alert('Mua thành công');
 			}
