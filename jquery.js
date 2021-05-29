@@ -94,7 +94,7 @@ function adddata(){
  
 document.addEventListener('DOMContentLoaded',()=>{
 document.getElementById("dangki").addEventListener('click',function(){
-	if(checkPhone() && validateemail() && validateform()){
+	if(checkPhone() && validateemail() && validateform() && matchpass()){
 		adddata();
 		var data=JSON.parse(localStorage.getItem('mydata')) || [];
 		alert('Đăng kí thành công \n tên đăng nhập của bạn:     '+ document.getElementById("user").value + '\n Số Điện Thoại:    ' + document.getElementById("sdt").value + '\n Email:    ' + document.getElementById("email").value  + '\n XIN CHÀO  ' + document.getElementById("hoten").value );
@@ -227,6 +227,11 @@ document.addEventListener('DOMContentLoaded',()=>{
 document.getElementById("btnmua").addEventListener('click',adddatakhmh);
 
 });
+
+
+
+
+
 
 
 
