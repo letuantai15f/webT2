@@ -163,6 +163,70 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
                 alert('vui long không nhập ký tự - SĐT:0xxxxxxxxxx')
             }
         }
+btnmua.onclick = function checkmua() {
+
+	var username = inputUsername.value;
+	var pass = inputPass.value;
+	if (username == "" || pass == "") {
+		alert('Vui lòng đăng nhập')
+	}
+	else {
+		var kh=JSON.parse(localStorage.getItem('mydatakh')) || [] ;
+		var x = JSON.parse(localStorage.getItem('mydata')) || [];
+		if (x.length == 0)
+			alert('Vui lòng đăng kí');
+
+		for (var i = 0; i < x.length; i++) {
+			var t = x[i].user;
+			var y = x[i].passw;
+		
+		
+			
+			if (username === x[i].user && pass === x[i].passw) {
+				var r= confirm("Bạn chắc chắn mua chứ!");
+				var r2=confirm('Thông tin bạn chọn mua:'+kh[i].sanpham+'Họ Tên   :' + x[i].hoten);
+				if(r==true && r2==true)
+				alert('Mua thành công');
+			}
+		}
+	}
+}
+let datakh=[];
+function adddatakh(){
+	let datakhh={
+		
+	sanpham: document.getElementById("sanphamchitiet").innerHTML
+
+	}
+	
+	datakh.push(datakhh);
+	console.warn('added',{datakh});
+	localStorage.setItem('mydatakh',JSON.stringify(datakh));
+}
+
+
+ 
+document.addEventListener('DOMContentLoaded',()=>{
+document.getElementById("btnmua").addEventListener('click',adddatakh);
+
+});
+var kh=JSON.parse(localStorage.getItem('mydatakh')) || [] ;
+	var x = JSON.parse(localStorage.getItem('mydata')) || [];
+let datakhmh=x.concat(kh);
+function adddatakhmh(){
+	
+	
+	
+	console.warn('added',{datakhmh});
+	localStorage.setItem('mydatakhmh',JSON.stringify(datakhmh));
+}
+
+
+ 
+document.addEventListener('DOMContentLoaded',()=>{
+document.getElementById("btnmua").addEventListener('click',adddatakhmh);
+
+});
 
 
 
