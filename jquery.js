@@ -116,7 +116,7 @@ var name=document.getElementById("user").value;
 var password=document.getElementById("passw").value;  
   
 if (name=="" || password==""){  
-  alert("Không Được Để Trống");  
+  alert("Không Được Để Trống Mật Khẩu & Tên Đăng Nhập");  
   return false;  
 }else if(password.length<6){  
   alert("Mật Khẩu Phải  6 Kí Tự Trở Lên");  
@@ -160,7 +160,7 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
                 return true;
             }
             else {
-                alert('vui long không nhập ký tự - SĐT:0xxxxxxxxxx')
+                alert('vui long không nhập ký tự - VD:0949218444');
             }
         }
 btnmua.onclick = function checkmua() {
